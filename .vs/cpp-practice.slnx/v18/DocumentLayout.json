@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Norka Natalia\\Documents\\git\\cpp-practice\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{93CC5FD3-4AA6-409D-AEB9-99CF4C82D34D}|cpp-practice.vcxproj|C:\\Users\\Norka Natalia\\Documents\\git\\cpp-practice\\cpp-practice.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{93CC5FD3-4AA6-409D-AEB9-99CF4C82D34D}|cpp-practice.vcxproj|solutionrelative:cpp-practice.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 296,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "cpp-practice.cpp",
+              "DocumentMoniker": "C:\\Users\\Norka Natalia\\Documents\\git\\cpp-practice\\cpp-practice.cpp",
+              "RelativeDocumentMoniker": "cpp-practice.cpp",
+              "ToolTip": "C:\\Users\\Norka Natalia\\Documents\\git\\cpp-practice\\cpp-practice.cpp",
+              "RelativeToolTip": "cpp-practice.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-07-21T02:49:18.53Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
