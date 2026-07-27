@@ -1,33 +1,26 @@
+# top-most EditorConfig file
+root = true
+
 [*.{cpp,h,hpp,cxx}]
-# --- 1. Sangría y Espaciado Básico ---
+# --- 1. Sangría y Espaciado ---
 indent_style = space
 indent_size = 4
 tab_width = 4
 
-# --- 2. Formato de C++ en Visual Studio (Motor Nativo VC++) ---
-# Estilo de llaves en la misma línea (estilo Java / K&R)
-cpp_indent_braces = false
-cpp_new_line_before_open_brace_function = none
-cpp_new_line_before_open_brace_block = none
-cpp_new_line_before_open_brace_type = none
-cpp_new_line_before_open_brace_namespace = none
-cpp_new_line_before_open_brace_lambda = none
+# --- 2. Posición de llaves (Estilo Java / K&R) ---
+# Valores válidos para C++: same_line, new_line, ignore
+cpp_new_line_before_open_brace_type = same_line
+cpp_new_line_before_open_brace_function = same_line
+cpp_new_line_before_open_brace_block = same_line
+cpp_new_line_before_open_brace_namespace = same_line
+cpp_new_line_before_open_brace_lambda = same_line
 
-# Estructuras de control estilo Java (eg: "} else {")
+# Estructuras de control (ej: "} else {")
 cpp_new_line_before_catch = false
 cpp_new_line_before_else = false
+cpp_new_line_before_finally = false
 
-# Espaciado de operadores y palabras clave
+# --- 3. Espaciado general ---
 cpp_space_after_keywords_in_control_flow_statements = true
-cpp_space_before_init_list_open_brace = true
 cpp_space_within_parameter_list_parentheses = false
 cpp_space_before_empty_argument_list = false
-
-# Salida en una sola línea para métodos cortos
-cpp_allow_short_blocks_on_a_single_line = false
-cpp_allow_short_functions_on_a_single_line = false
-
-# --- 3. Alternativa recomendada: ClangFormat (Estilo Java) ---
-# Visual Studio incluye ClangFormat de forma nativa. 
-# Descomenta la siguiente línea para delegarle todo el formato a ClangFormat en estilo Java:
-# format = { BasedOnStyle: Java, IndentWidth: 4, ColumnLimit: 120 }
