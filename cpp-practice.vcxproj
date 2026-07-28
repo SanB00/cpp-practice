@@ -127,7 +127,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ArchivoCirugia.cpp" />
+    <ClCompile Include="Cirugia.cpp" />
+    <ClCompile Include="Fecha.cpp" />
     <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ArchivoCirugia.h" />
+    <ClInclude Include="Cirugia.h" />
+    <ClInclude Include="Fecha.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

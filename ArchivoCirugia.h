@@ -4,8 +4,13 @@
 
 template <typename T>
 class ArchivoCirugia {
+private:
+    const char* nombreArchivo = "cirugias.dat"
 public:
-    static bool leer(int pos, T& registro, const char* nombreArchivo = "libros.dat") {
+    ArchivoCirugia() {
+        crearArchivoSiNoExiste();
+    }
+    static bool leer(int pos, T& registro) {
         FILE* p = fopen(nombreArchivo, "rb");
         if (p == nullptr) {
             return false;
@@ -21,7 +26,7 @@ public:
         return leyo;
     }
 
-    static std::vector<T> leerTodos(const char* nombreArchivo = "libros.dat") {
+    static std::vector<T> leerTodos() {
         std::vector<T> registros;
         FILE* p = fopen(nombreArchivo, "rb");
         if (p == nullptr) {
@@ -37,7 +42,7 @@ public:
         return registros;
     }
 
-    static bool agregar(const T& registro, const char* nombreArchivo = "libros.dat") {
+    static bool agregar(const T& registro) {
         FILE* p = fopen(nombreArchivo, "ab");
         if (p == nullptr) {
             return false;
@@ -48,7 +53,7 @@ public:
         return guardado;
     }
 
-    static bool guardar(const T& registro, int pos, const char* nombreArchivo = "libros.dat") {
+    static bool guardar(const T& registro, int pos) {
         FILE* p = fopen(nombreArchivo, "r+b");
         if (p == nullptr) {
             p = fopen(nombreArchivo, "w+b");
@@ -67,7 +72,7 @@ public:
         return guardado;
     }
 
-    static void crearArchivoSiNoExiste(const char* nombreArchivo = "libros.dat") {
+    static void crearArchivoSiNoExiste() {
         FILE* p = fopen(nombreArchivo, "ab");
         if (p != nullptr) {
             fclose(p);
