@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include "Cirugia.h"
+#include "ArchivoCirugia.h"
 
 using namespace std;
 
@@ -55,12 +56,7 @@ void sobrecargaOperadores() {
 
 // Función para guardar los registros de prueba
 void guardarDatos() {
-    std::ofstream archivo("cirugias.dat", std::ios::binary | std::ios::out);
-    
-    if (!archivo) {
-        std::cerr << "Error al abrir el archivo para escribir." << std::endl;
-        return;
-    }
+    ArchivoCirugia archivo;
 
     // Datos de entrada provistos en la consulta
     Cirugia lista[] = {
@@ -75,16 +71,18 @@ void guardarDatos() {
     };
 
     // Escritura en bloque de todo el array en el archivo binario
-    archivo.write(reinterpret_cast<const char*>(lista), sizeof(lista));
-    
-    archivo.close();
+    for (const Cirugia& c : lista) {
+        //archivo.agregar(c);
+        archivo.guardar(c);
+    }
+
     std::cout << "Datos guardados exitosamente en cirugias.dat\n" << std::endl;
 }
 
 int main()
 {
     cout << "Hello world! from main file" << endl;
-    sobrecargaOperadores();
+    guardarDatos();
     return 0;
 }
 
