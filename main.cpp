@@ -78,11 +78,19 @@ void guardarDatos() {
 
     std::cout << "Datos guardados exitosamente en cirugias.dat\n" << std::endl;
 }
+/*
+1) Listar las cirugías correspondientes a la obra social 5 (2 puntos).
+2) Informar la obras sociales con mayor cantidad de cirugías cardíacas (tipo de cirugía 6)
+(3 puntos)
+3) Informar el tipo de cirugía con menos duración en total (sumadas todas las cirugías). (3
+puntos)
+*/
+int main() {
+    Cirugia().listarCirugiasPorObraSocial(5);
 
-int main()
-{
-    cout << "Hello world! from main file" << endl;
-    guardarDatos();
+    Cirugia().punto2_MayorCirugiasCardiacas();
+
+   // Cirugia().punto3();
     return 0;
 }
 

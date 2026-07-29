@@ -36,7 +36,11 @@ public:
 
     int getObraSocial() const { return obraSocial; }
     int getNumeroDeCirugia() const { return numeroDeCirugia; }
+    int getTipoDeCirugia() const { return tipoDeCirugia; }
+    int getDuracionDeLaCirugia() const { return duracionDeLaCirugia; }
     int listarCirugiasPorObraSocial(int obraSocialBuscada);
+    int punto2_MayorCirugiasCardiacas();
+    int punto3();
 
     void mostrarCampos() const {
         std::cout << "Número de Cirugía: " << numeroDeCirugia << "\n"
