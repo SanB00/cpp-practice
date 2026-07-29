@@ -1,4 +1,31 @@
 # depslib dependency file v1.0
-1584205420 source:c:\users\norka natalia\documents\git\cpp-practice\main.cpp
+1785203294 source:c:\users\norka natalia\documents\git\cpp-practice\main.cpp
 	<iostream>
+	"Cirugia.h"
+	"ArchivoCirugia.h"
+
+1785173841 source:c:\users\norka natalia\documents\git\cpp-practice\archivocirugia.cpp
+	"ArchivoCirugia.h"
+
+1785203069 c:\users\norka natalia\documents\git\cpp-practice\archivocirugia.h
+	<cstdio>
+	<vector>
+	<iostream>
+	"Cirugia.h"
+
+1785202850 c:\users\norka natalia\documents\git\cpp-practice\cirugia.h
+	<iostream>
+	<string>
+	<vector>
+	"Fecha.h"
+
+1785202868 c:\users\norka natalia\documents\git\cpp-practice\fecha.h
+	<string>
+
+1785203228 source:c:\users\norka natalia\documents\git\cpp-practice\cirugia.cpp
+	"Cirugia.h"
+	"ArchivoCirugia.h"
+
+1785199086 source:c:\users\norka natalia\documents\git\cpp-practice\fecha.cpp
+	"Fecha.h"
 

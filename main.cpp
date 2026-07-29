@@ -1,6 +1,8 @@
 // This file contains the 'main' function. Program execution begins and ends there.
 
 #include <iostream>
+#include "Cirugia.h"
+#include "ArchivoCirugia.h"
 
 using namespace std;
 
@@ -52,12 +54,43 @@ void sobrecargaOperadores() {
     }
 }
 
+// Función para guardar los registros de prueba
+void guardarDatos() {
+    ArchivoCirugia archivo;
 
+    // Datos de entrada provistos en la consulta
+    Cirugia lista[] = {
+        Cirugia(101, 5, 11111, Fecha(2026, 10, 1), 2, 120),
+        Cirugia(102, 3, 22222, Fecha(2026, 12, 1), 6, 90),
+        Cirugia(103, 5, 33333, Fecha(2026, 15, 2), 6, 240),
+        Cirugia(104, 1, 44444, Fecha(2026, 2, 3),  1, 300),
+        Cirugia(105, 2, 55555, Fecha(2026, 20, 3), 6, 180),
+        Cirugia(106, 5, 66663, Fecha(2026, 5, 4),  6, 60),
+        Cirugia(107, 4, 77777, Fecha(2026, 10, 5), 3, 400),
+        Cirugia(108, 5, 88888, Fecha(2026, 11, 5), 1, 500)
+    };
 
-int main()
-{
-    cout << "Hello world! from main file" << endl;
-    sobrecargaOperadores();
+    // Escritura en bloque de todo el array en el archivo binario
+    for (const Cirugia& c : lista) {
+        //archivo.agregar(c);
+        archivo.guardar(c);
+    }
+
+    std::cout << "Datos guardados exitosamente en cirugias.dat\n" << std::endl;
+}
+/*
+1) Listar las cirugías correspondientes a la obra social 5 (2 puntos).
+2) Informar la obras sociales con mayor cantidad de cirugías cardíacas (tipo de cirugía 6)
+(3 puntos)
+3) Informar el tipo de cirugía con menos duración en total (sumadas todas las cirugías). (3
+puntos)
+*/
+int main() {
+    Cirugia().listarCirugiasPorObraSocial(5);
+
+    Cirugia().punto2_MayorCirugiasCardiacas();
+
+   // Cirugia().punto3();
     return 0;
 }
 

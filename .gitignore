@@ -70,3 +70,6 @@ Testing/
 
 cpp-practice/
 .vs/
+bin/
+obj/
+x64/
