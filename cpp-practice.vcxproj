@@ -131,11 +131,13 @@
     <ClCompile Include="Cirugia.cpp" />
     <ClCompile Include="Fecha.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Propiedad.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ArchivoCirugia.h" />
     <ClInclude Include="Cirugia.h" />
     <ClInclude Include="Fecha.h" />
+    <ClInclude Include="Propiedad.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
